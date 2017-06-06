@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+</head>
+<body>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+<script src="arbitrage.js"></script>
+<script src="lindenmayer.js"></script>
+
+<script lang="javascript">
+    s = lsystem(3, ['F'], { F:'FF-[-F+F+F]+[+F-F-F]' }, dol_step)
+    lrender({x:700,y:700}, s, plant(20, 10 * Math.PI/180))
+</script>
+</body>
+</html>
